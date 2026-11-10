@@ -10,7 +10,7 @@ Built by **Team Mushroom 🍄** for the APU Hackathon.
 
 | Light mode | Dark mode |
 | --- | --- |
-| ![EcoSprout in light mode](screenshots/light.png) | ![EcoSprout in dark mode](screenshots/dark.png) |
+| ![EcoSprout in light mode](screenshots/light.webp) | ![EcoSprout in dark mode](screenshots/dark.webp) |
 
 ---
 
@@ -68,7 +68,7 @@ A score **above 40** is flagged as high energy waste, **1–40** as a moderate i
 ### Install and run
 
 ```bash
-git clone <this-repo-url>
+git clone https://github.com/yy-076/APU-Cloud-Innovation-Hackathon/
 cd apu-hackathon-energy-saver
 
 python -m venv .venv
