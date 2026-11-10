@@ -6,7 +6,12 @@ EcoSprout monitors IoT sensor data across campus rooms, flags energy waste, and 
 
 Built by **Team Mushroom 🍄** for the APU Hackathon.
 
-<!-- Add your team members here, e.g. - Name — Role -->
+| Member | Role |
+| --- | --- |
+| Fhang Ying Ying | Leader |
+| Foo Jia Shuen | Member |
+| Chew Kai Xuan | Member |
+| Fhang Wei Wei | Member |
 
 | Light mode | Dark mode |
 | --- | --- |
