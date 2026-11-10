@@ -69,7 +69,7 @@ A score **above 40** is flagged as high energy waste, **1–40** as a moderate i
 
 ```bash
 git clone https://github.com/yy-076/APU-Cloud-Innovation-Hackathon/
-cd apu-hackathon-energy-saver
+cd APU-Cloud-Innovation-Hackathon
 
 python -m venv .venv
 .venv\Scripts\activate          # Windows
