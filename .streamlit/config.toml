@@ -1,0 +1,46 @@
+# ==========================================================
+# APU 智能校园主题配置
+# 分别覆盖两种模式，所以切换深色模式时颜色会自动跟着变。
+# ==========================================================
+
+[theme]
+# 标题字体：Plus Jakarta Sans（离线时自动退回系统无衬线字体）
+headingFont = "Plus Jakarta Sans:https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&display=swap, sans-serif"
+# 全局圆角，让按钮、输入框、表格更柔和
+baseRadius = "0.75rem"
+buttonRadius = "0.75rem"
+showSidebarBorder = false
+
+# ---------- 浅色模式：薄荷绿背景----------
+[theme.light]
+primaryColor = "#008751"
+backgroundColor = "#eef6f1"
+secondaryBackgroundColor = "#e0eee6"
+textColor = "#0f1d30"
+borderColor = "#c9ded2"
+linkColor = "#00754a"
+dataframeHeaderBackgroundColor = "#dcece3"
+chartCategoricalColors = ["#008751", "#2563eb", "#f59e0b", "#7c3aed", "#0ea5e9"]
+
+# ---------- 深色模式：深海军蓝背景----------
+[theme.dark]
+primaryColor = "#10b981"
+backgroundColor = "#0a1424"
+secondaryBackgroundColor = "#13233a"
+textColor = "#e6eef5"
+borderColor = "#22395a"
+linkColor = "#34d399"
+dataframeHeaderBackgroundColor = "#13233a"
+chartCategoricalColors = ["#34d399", "#60a5fa", "#fbbf24", "#a78bfa", "#38bdf8"]
+
+# ---------- 侧边栏：APU 深蓝 ----------
+[theme.sidebar]
+primaryColor = "#10b981"
+backgroundColor = "#0f1d30"
+secondaryBackgroundColor = "#1a2d48"
+textColor = "#e6eef5"
+borderColor = "#2d4a77"
+
+[theme.dark.sidebar]
+backgroundColor = "#081120"
+secondaryBackgroundColor = "#13233a"
