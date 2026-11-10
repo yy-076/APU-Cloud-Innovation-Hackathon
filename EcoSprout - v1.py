@@ -573,7 +573,7 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("### 📍 Zone Selection")
 
 auditoriums = [f"Auditorium {i}" for i in range(1, 8)]
-room_ids = ["03-01", "04-02", "05-03", "06-04", "07-05", "08-06", "09-06"]
+room_ids = ["03-01", "04-02", "05-03", "06-04", "07-05", "08-06", "09-07"]
 blocks = ["A", "B", "C", "D", "E"]
 block_rooms = [f"{block}-{room}" for block in blocks for room in room_ids]
 all_zones = auditoriums + block_rooms
