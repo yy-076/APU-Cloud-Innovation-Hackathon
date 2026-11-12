@@ -176,6 +176,18 @@ st.markdown("""
         color: #ffffff;
     }
 
+        section[data-testid="stSidebar"] [data-testid="stButton"] button[data-testid="stBaseButton-primary"] {
+        background: linear-gradient(90deg, #008751, #10b981);
+        border-color: #34d399;
+        box-shadow: inset 4px 0 0 #ecfdf5, 0 8px 20px -10px rgba(16, 185, 129, 0.9);
+        color: #ffffff;
+        transform: none;
+    }
+
+    section[data-testid="stSidebar"] [data-testid="stButton"] button[data-testid="stBaseButton-primary"] p {
+        font-weight: 700;
+    }
+
     /* ========== 3. APU 顶部横幅 (Hero banner) ========== */
     .apu-header {
         position: relative;
@@ -567,7 +579,7 @@ modules = [
 
 # 为每个模块生成一个按钮：点击后记住选中的模块，并立刻重新运行页面
 for mod in modules:
-    if st.sidebar.button(mod, use_container_width=True, key=f"nav_{mod}"):
+     if st.sidebar.button(mod, use_container_width=True, key=f"nav_{mod}", type="primary" if mod == st.session_state.nav_mode else "secondary"):
         st.session_state.nav_mode = mod
         st.rerun()
 
