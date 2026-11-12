@@ -543,6 +543,11 @@ st.markdown("""
 # 2. 侧边栏：API 密钥输入框 + 导航按钮 + 区域选择
 st.sidebar.markdown("### 📊 Dashboard")
 api_key = st.sidebar.text_input("Enter Gemini API Key", type="password")
+if not api_key:
+    try:
+        api_key = st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        pass
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("### 🧭 Navigation Modules")
