@@ -586,6 +586,7 @@ all_zones = auditoriums + block_rooms
 if nav_mode != "🏢 Campus-Wide Analytics Overview":
     room_choice = st.sidebar.selectbox("Select Campus Zone", all_zones, label_visibility="collapsed")
     if st.sidebar.button("🔄 Refresh Sensor Feed", use_container_width=True):
+        st.session_state.feed_refreshed = True
         st.rerun()
 else:
     room_choice = "All Campus Zones (Macro View)"
